@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
+@theme {
+  /* Primary — bright rose */
+  --color-brand: #f43f84;
+  --color-brand-dark: #d81f68;
+  --color-brand-light: #ffe9f2;
+
+  /* Secondary — warm coral, used for accents and highlights */
+  --color-accent: #ff7a4d;
+  --color-accent-light: #fff0e8;
+
+  /* Plum, for text. Kept soft — nothing on this site is near-black. */
+  --color-ink: #3d2233;
+  --color-ink-soft: #6f5064;
+
+  /* Pastel family — one per category, plus their readable text colours */
+  --color-rose-tint: #ffe4ef;
+  --color-rose-ink: #c62468;
+  --color-lilac-tint: #f0e8ff;
+  --color-lilac-ink: #7433d6;
+  --color-peach-tint: #ffe9d9;
+  --color-peach-ink: #c9551f;
+  --color-mint-tint: #d6f7f0;
+  --color-mint-ink: #0d8071;
+  --color-sky-tint: #e0f0ff;
+  --color-sky-ink: #1874bb;
+
+  --color-cream: #fffdfd;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-heading), Georgia, "Times New Roman", serif;
+
+  /* One shadow language: soft, pink-tinted, never grey. */
+  --shadow-soft: 0 2px 4px -2px rgb(157 23 77 / 0.06),
+    0 12px 28px -12px rgb(157 23 77 / 0.14);
+  --shadow-lift: 0 4px 8px -4px rgb(157 23 77 / 0.08),
+    0 24px 48px -16px rgb(157 23 77 / 0.22);
+}
+
+/*
+ * Light only, deliberately. This is a bright consumer shop and the pastel
+ * palette is the brand — a dark scheme made the product photos look grubby.
+ * `color-scheme` stops the browser darkening form controls and scrollbars.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
+  --page: var(--color-cream);
+  --text: var(--color-ink);
+  --muted: #8a7080;
+  --card: #ffffff;
+  --border: #f7e2ea;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+@utility surface {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+@utility text-muted {
+  color: var(--muted);
+}
+
+@utility border-app {
+  border-color: var(--border);
+}
+
+/* Soft blush wash behind the hero, so the page opens with colour. */
+@utility hero-wash {
+  background:
+    radial-gradient(70% 90% at 8% -10%, #ffdfec 0%, transparent 62%),
+    radial-gradient(55% 75% at 92% 0%, #ece2ff 0%, transparent 58%),
+    radial-gradient(50% 65% at 62% 110%, #ffe7d6 0%, transparent 62%),
+    var(--page);
+}
+
+/* Same wash, tuned for a full-bleed band mid-page. */
+@utility band-wash {
+  background:
+    radial-gradient(45% 120% at 0% 50%, #ffe4ef 0%, transparent 60%),
+    radial-gradient(45% 120% at 100% 50%, #e6f2ff 0%, transparent 60%),
+    #fff8fb;
+}
+
+/* Warm gradient for the closing call to action — replaces a dark block. */
+@utility brand-gradient {
+  background: linear-gradient(115deg, #f43f84 0%, #ff6b6b 48%, #ff9a4d 100%);
 }
