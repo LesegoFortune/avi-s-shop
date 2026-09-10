@@ -87,14 +87,37 @@ Restart the dev server and sign in at http://localhost:3000/admin.
 
 ### 4. Deploy
 
+Steps 2 and 3 are optional — the shop deploys and sells fine without a
+database, running off `src/lib/seed.ts`. That is how it went live.
+
+The repo is connected to GitHub, so Vercel deploys it automatically:
+
 ```bash
-npx vercel
+git push -u origin main
 ```
 
-Add the same four environment variables in the Vercel dashboard
-(**Settings → Environment Variables**), then redeploy. You get a free
-`sugar-and-soul-finds.vercel.app` address straight away; point a real domain at it later
-in **Settings → Domains**.
+Then at [vercel.com/new](https://vercel.com/new), import
+`LesegoFortune/avi-s-shop`. Vercel detects Next.js on its own — leave the build
+settings alone. Before the first deploy, add one environment variable under
+**Environment Variables**:
+
+| Name | Value |
+| --- | --- |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | `27788287195` |
+
+That is the only one needed to go live. Add the Supabase pair and
+`ADMIN_EMAILS` later, when you do step 2 — until then `/admin` shows a setup
+notice instead of breaking.
+
+You get a free `avi-s-shop.vercel.app` address straight away; point a real
+domain at it later in **Settings → Domains**. Every future `git push` to `main`
+redeploys the site.
+
+#### Changing products before there's a database
+
+Until Supabase exists, the catalogue lives in code. Edit `src/lib/seed.ts` and
+the matching row in `supabase/seed.sql` — keep the two in step — then commit and
+push. The site redeploys in about a minute.
 
 ## Running the shop day to day
 
@@ -108,7 +131,7 @@ Everything happens at `/admin` in the browser — no code, no developer.
   the product page, and the chosen one lands in the WhatsApp message.
 - **In stock** toggle — shows "Sold out" on the card without deleting the
   product, so you keep the photo and description for next time.
-- **Show on the home page** — controls what appears under *Popular right now*.
+- **Show on the home page** — controls what appears under *Everyone's favourites*.
 - **Enquiries** — every bulk quote form submission, newest first, with a link
   that opens WhatsApp to that customer. This is a backup in case a chat gets
   lost, not your main inbox.
