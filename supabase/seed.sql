@@ -35,5 +35,55 @@ values
 
   ('“God Made a Way” Print', 'god-made-a-way-print', '“Long story short, God made a way.” Set in an elegant serif with a soft metallic finish that catches the light.', 'wall-art', 349, '[{"min_qty":3,"price":319}]', true, 'Pick your size and finish', '["A4","A3","Champagne","Matte black"]', 5, true, false),
 
-  ('Dino Hooded Onesie', 'dino-hooded-onesie', 'Plush fleece romper in bright green with a spiked tail and a hooded dinosaur face. Zips right up, keeps a toddler warm indoors, and gets worn far past pyjama time.', 'baby', 299, '[{"min_qty":3,"price":279}]', false, null, '["6-12 months","12-18 months","18-24 months","2-3 years"]', 5, true, false)
+  ('Dino Hooded Onesie', 'dino-hooded-onesie', 'Plush fleece romper in bright green with a spiked tail and a hooded dinosaur face. Zips right up, keeps a toddler warm indoors, and gets worn far past pyjama time.', 'baby', 299, '[{"min_qty":3,"price":279}]', false, null, '["6-12 months","12-18 months","18-24 months","2-3 years"]', 5, true, false),
+
+  ('Personalised Photo Phone Case', 'personalised-photo-phone-case', 'Your photo printed edge to edge on a shockproof case, with a matching flower wrist strap so it never slips out of your hand.', 'phone-cases', 249, '[{"min_qty":3,"price":229}]', true, 'Send the photo and your exact phone model', '["Orange","Blush pink","Cream","Sage"]', 5, true, false),
+
+  ('“Dad & Me” Baby Tee', 'dad-and-me-baby-tee', 'Soft cotton tee scattered with pink hearts and a little fist bump between father and child. The photo everyone takes on Father’s Day.', 'baby', 189, '[{"min_qty":3,"price":175}]', true, 'Tell us the size you need', '["0-6 months","6-12 months","12-18 months","18-24 months","2-3 years"]', 5, true, false),
+
+  ('Custom Photo Canvas', 'custom-photo-canvas', 'Your favourite family photo stretched over a wooden frame, ready to hang straight out of the box. Colours come out warm, not washed out.', 'wall-art', 599, '[{"min_qty":2,"price":549}]', true, 'Send the photo and pick your size', '["20x30cm","30x40cm","40x60cm","50x70cm"]', 3, true, false),
+
+  ('Wedding Photo Phone Case', 'wedding-photo-phone-case', 'A glossy case printed with your own photo and a soft black bumper. Made for the couple who want the day on them all the time.', 'phone-cases', 229, '[{"min_qty":3,"price":209}]', true, 'Send the photo and your exact phone model', '["Glossy","Matte"]', 5, true, false),
+
+  ('Personalised Dad Keyring', 'personalised-dad-keyring', 'Brushed steel dog tag engraved with a fist bump, hung with a little charm per child, each one engraved with their name.', 'personalised', 199, '[{"min_qty":3,"price":179}]', true, 'Send each child’s name, and tell us boy or girl for each charm', '["Black tag","Silver tag"]', 5, true, false),
+
+  ('“The Day It All Began” Framed Print', 'day-it-all-began-framed-print', 'Your photo cut into a heart above the month it happened, with the date circled and both names down the side. An anniversary gift that lands.', 'wall-art', 449, '[{"min_qty":3,"price":419}]', true, 'Send the photo, both names, and the date to circle', '["A4","A3","Black frame","Oak frame"]', 5, true, false),
+
+  ('“Super Mom” Phone Case', 'super-mom-phone-case', 'Matte black case with a mom-and-kids illustration in soft blue. No personalising needed, it just says it.', 'phone-cases', 199, '[{"min_qty":3,"price":179}]', true, 'Tell us your exact phone model', '["One child","Two children","Three children"]', 5, true, false),
+
+  ('Spotify Photo Collage Print', 'spotify-photo-collage-print', 'Four of your photos around a scannable song code, so the track plays when anyone points a phone at it. Printed on thick matte paper.', 'wall-art', 349, '[{"min_qty":3,"price":319}]', true, 'Send four photos and the song you want the code for', '["20x30cm","30x40cm","40x60cm","50x70cm"]', 5, true, false),
+
+  ('Personalised Moon Crystal Lamp', 'personalised-moon-crystal-lamp', 'A moon etched inside a glass sphere with your names and date, lit warm from a wooden base. Looks like a paperweight until you switch it on.', 'personalised', 449, '[{"min_qty":3,"price":419}]', true, 'Send both names and the date to engrave', '["Warm white light","Colour changing"]', 5, true, false),
+
+  ('Personalised Birthday Newspaper', 'personalised-birthday-newspaper', 'A full front page made up about them, with your photos and their name in the headline. Guests read the whole thing at the party.', 'personalised', 299, '[{"min_qty":3,"price":279}]', true, 'Send the photos, the name, the age and anything you want written in', '["A3","A2"]', 5, true, false),
+
+  ('Personalised Photo Glass Block', 'personalised-photo-glass-block', 'A thick square of glass with your photo printed inside it and your names underneath. Catches the light on a shelf all day.', 'personalised', 399, '[{"min_qty":3,"price":369}]', true, 'Send the photo and the names to print', '["10x10cm","15x15cm"]', 5, true, false),
+
+  ('Personalised Photo Crystal Lamp', 'personalised-photo-crystal-lamp', 'Your photo etched into a glass ball inside a heart, names and date underneath, sitting on a warm wooden light base.', 'personalised', 429, '[{"min_qty":3,"price":399}]', true, 'Send the photo, both names and the date', '["Warm white light","Colour changing"]', 5, true, false),
+
+  ('Personalised Song Plaque Print', 'personalised-song-plaque-print', 'One photo above a song title and a player bar, framed simply. The song you both claim as yours, on the wall.', 'wall-art', 329, '[{"min_qty":3,"price":299}]', true, 'Send the photo, the song name and the artist', '["A4","A3","Oak frame","Black frame"]', 5, true, false),
+
+  ('Personalised Satin Bride Robe', 'personalised-satin-bride-robe', 'Soft satin robe with the name and title in gold script across the back. What the whole bridal party gets ready in.', 'personalised', 449, '[{"min_qty":4,"price":419},{"min_qty":6,"price":399}]', true, 'Send the name, title and date for each robe', '["White","Blush pink","Champagne","Black"]', 4, true, false),
+
+  ('“Love” Definition Photo Print', 'love-definition-photo-print', 'Four of your photos above the word love written out like a dictionary entry, with both names in the definition.', 'wall-art', 399, '[{"min_qty":3,"price":369}]', true, 'Send four photos and both names', '["A4","A3","Black frame","Oak frame"]', 5, true, false),
+
+  ('“Boyfriend” Gift Bag', 'boyfriend-gift-bag', 'Heavy white bag with a black satin bow and script lettering. Turns whatever you bought into a proper gift.', 'personalised', 89, '[{"min_qty":5,"price":79}]', false, null, '["Small","Medium","Large"]', 10, true, false),
+
+  ('Trifold Baby Photo Frame', 'trifold-baby-photo-frame', 'Three little frames hinged together in white wood, so the newborn photos stand up on their own on a shelf.', 'baby', 349, '[{"min_qty":3,"price":319}]', true, 'Tell us the wording you want on each frame', '["White","Natural wood"]', 5, true, false),
+
+  ('“Happy Birthday” Gift Bag', 'happy-birthday-gift-bag', 'The same heavy white bag with a black satin bow, lettered for a birthday. Buy a few, they get used all year.', 'personalised', 89, '[{"min_qty":5,"price":79}]', false, null, '["Small","Medium","Large"]', 10, true, false),
+
+  ('“To My Mom” Acrylic Plaque', 'to-my-mom-acrylic-plaque', 'A pink acrylic stand cut to shape, printed with a long letter to your mom. The one people actually read all the way through.', 'personalised', 299, '[{"min_qty":3,"price":279}]', true, 'Tell us who it is from, and any wording you want changed', '["Pink","Clear","White"]', 5, true, false),
+
+  ('Personalised Face Photo Blanket', 'personalised-face-photo-blanket', 'Fleece blanket printed with a cut-out face and name repeated across it. Ridiculous in the best way, and genuinely warm.', 'baby', 649, '[{"min_qty":2,"price":599}]', true, 'Send a clear face photo per person, plus the names', '["Pink","Blue","Grey","Cream"]', 3, true, false),
+
+  ('Personalised Bridal Slippers', 'personalised-bridal-slippers', 'Fluffy cross-strap slippers with the name in gold across the toe. Bridesmaids put them on and do not take them off.', 'personalised', 349, '[{"min_qty":4,"price":329},{"min_qty":6,"price":309}]', true, 'Send the name and shoe size for each pair', '["White","Blush pink","Grey"]', 4, true, false),
+
+  ('Personalised Baby Birth Stats Light', 'baby-birth-stats-light', 'Acrylic panel engraved with the birth date, time, weight and length beside three photos, lit warm from a wooden base.', 'baby', 449, '[{"min_qty":3,"price":419}]', true, 'Send the photos plus the full name, date, time, weight and length', '["Warm white light","Colour changing"]', 5, true, false),
+
+  ('“To My Man” Acrylic Heart', 'to-my-man-acrylic-heart', 'A clear acrylic heart, printed with a letter to him and standing on its own. Small enough for a bedside table.', 'personalised', 299, '[{"min_qty":3,"price":279}]', true, 'Tell us any wording you want changed, and who it is from', '["Clear","Frosted"]', 5, true, false),
+
+  ('Monogram Leather Phone Case', 'monogram-leather-phone-case', 'Soft leather-look case embossed with your initial in a floral letter, with a name and year underneath.', 'phone-cases', 249, '[{"min_qty":3,"price":229}]', true, 'Send your initial, the name, the year and your exact phone model', '["Brown","Black","Tan"]', 5, true, false),
+
+  ('Personalised Family Mugs (Set of 2)', 'personalised-family-mugs', 'A pair of mugs printed with little cartoon versions of the kids and their names. The set that gets used every single morning.', 'drinkware', 299, '[{"min_qty":3,"price":279}]', true, 'Send each child’s name, and tell us boy or girl for each character', '["Mum & Dad","Gogo & Mkhulu","Custom wording"]', 5, true, false)
 on conflict (slug) do nothing;

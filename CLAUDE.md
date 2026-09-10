@@ -50,13 +50,18 @@ and should be fixed.
 
 ## Outstanding work
 
-1. **Three photos need reshooting.** The tumbler shot has “CUSTOMITED”
-   watermarked across the bottom; the seat belt pad shot is a four-up supplier
-   collage rather than one clean product photo; and the Dino Hooded Onesie is a
-   candid home snapshot with a child, an adult's legs and a bedroom in frame.
-   All three are live on the site as-is at the owner's request.
+1. **Many photos are supplier listing images, not own photography.** They carry
+   overlay text that now shows on the live site — “CUSTOMITED” on the tumbler,
+   “Custom photo” and “CUSTOM CANVAS” on several of the newer items, a size
+   chart on the Spotify collage print, “Over 500 positive reviews” on the
+   trifold baby frame, and a **SHEIN watermark on the “To My Man” acrylic
+   heart** (a competitor's brand on the shop's own product page). The seat belt
+   pad shot is a four-up supplier collage, and the Dino Hooded Onesie is a
+   candid home snapshot with a child in frame. All live as-is at the owner's
+   request; worth replacing with own photography as stock arrives.
 2. **Prices are estimates**, written by Claude against a guess at the SA market.
-   They need replacing with real numbers.
+   They need replacing with real numbers — this now covers all 40 products, and
+   the 25 added in the second batch were never priced by the owner at all.
 3. **Launched on seed data, no Supabase yet.** This was a deliberate call: the
    shop is fully browsable from `src/lib/seed.ts`, and `/admin` shows a setup
    notice instead of breaking. Until a project exists, product edits mean

@@ -56,6 +56,12 @@ export const categories = [
     tint: 'rose',
     photo: 'personalised-silicone-baby-feeding-set',
   },
+  {
+    slug: 'phone-cases',
+    label: 'Phone Cases',
+    tint: 'lilac',
+    photo: 'personalised-photo-phone-case',
+  },
 ] as const;
 
 export type CategorySlug = (typeof categories)[number]['slug'];
