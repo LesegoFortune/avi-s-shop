@@ -26,7 +26,7 @@ export function CategoryTile({
       {/* Light scrim only, so the pastels stay bright; the label sits on a
           white pill rather than needing a dark wash to be readable. */}
       <div className="absolute inset-0 bg-gradient-to-t from-ink/25 to-transparent" />
-      <span className="relative m-4 rounded-full bg-white/95 px-4 py-2 font-semibold text-ink shadow-soft backdrop-blur transition-colors group-hover:text-brand">
+      <span className="relative m-4 rounded-full bg-white/95 px-4 py-2 font-semibold text-ink shadow-soft backdrop-blur transition-colors group-hover:text-gold-ink">
         {category.label}
       </span>
     </Link>

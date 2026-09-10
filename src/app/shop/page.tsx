@@ -68,8 +68,8 @@ function FilterPill({
       href={href}
       className={
         active
-          ? 'rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-soft'
-          : 'rounded-full bg-white px-4 py-2 text-sm font-medium shadow-soft transition-all hover:-translate-y-0.5 hover:text-brand'
+          ? 'rounded-full bg-ink px-4 py-2 text-sm font-semibold text-gold-light shadow-soft'
+          : 'rounded-full bg-white px-4 py-2 text-sm font-medium shadow-soft transition-all hover:-translate-y-0.5 hover:text-gold-ink'
       }
     >
       {label}

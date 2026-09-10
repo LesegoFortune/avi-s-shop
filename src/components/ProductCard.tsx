@@ -24,7 +24,7 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
         ) : (
           product.personalised && (
-            <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-brand shadow-soft backdrop-blur">
+            <span className="absolute top-3 left-3 rounded-full bg-gold-light/95 px-2.5 py-1 text-xs font-semibold text-gold-ink shadow-soft backdrop-blur">
               Made to order
             </span>
           )
@@ -40,7 +40,7 @@ export function ProductCard({ product }: { product: Product }) {
           {categoryLabel(product.category)}
         </span>
 
-        <h3 className="mt-2.5 text-base leading-snug transition-colors group-hover:text-brand">
+        <h3 className="mt-2.5 text-base leading-snug transition-colors group-hover:text-gold-ink">
           {product.name}
         </h3>
 

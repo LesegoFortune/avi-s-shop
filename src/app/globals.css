@@ -1,18 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary — bright rose */
-  --color-brand: #f43f84;
-  --color-brand-dark: #d81f68;
+  /* Primary — rose, softened from the old hot pink so it sits with the
+     logo's gold rather than fighting it. */
+  --color-brand: #e04a80;
+  --color-brand-dark: #c22f66;
   --color-brand-light: #ffe9f2;
 
-  /* Secondary — warm coral, used for accents and highlights */
-  --color-accent: #ff7a4d;
-  --color-accent-light: #fff0e8;
+  /* Secondary — the logo's gold. `gold` is decorative (rules, hairlines,
+     icons); `gold-ink` is the darker one to use for text on light grounds,
+     where the bright gold has too little contrast. */
+  --color-gold: #c9a227;
+  --color-gold-ink: #8f6f18;
+  --color-gold-light: #f6ecd2;
 
-  /* Plum, for text. Kept soft — nothing on this site is near-black. */
-  --color-ink: #3d2233;
-  --color-ink-soft: #6f5064;
+  /* Kept as an alias so existing accent utilities stay valid. */
+  --color-accent: #c9a227;
+  --color-accent-light: #f6ecd2;
+
+  /* Near-black from the logo's centre disc, warmed very slightly. */
+  --color-ink: #1a181c;
+  --color-ink-soft: #5f5862;
 
   /* Pastel family — one per category, plus their readable text colours */
   --color-rose-tint: #ffe4ef;
@@ -48,9 +56,9 @@
   color-scheme: light;
   --page: var(--color-cream);
   --text: var(--color-ink);
-  --muted: #8a7080;
+  --muted: #7d7480;
   --card: #ffffff;
-  --border: #f7e2ea;
+  --border: #ece3d5;
 }
 
 body {
@@ -86,7 +94,7 @@ h3 {
   background:
     radial-gradient(70% 90% at 8% -10%, #ffdfec 0%, transparent 62%),
     radial-gradient(55% 75% at 92% 0%, #ece2ff 0%, transparent 58%),
-    radial-gradient(50% 65% at 62% 110%, #ffe7d6 0%, transparent 62%),
+    radial-gradient(50% 65% at 62% 110%, #f6ecd2 0%, transparent 62%),
     var(--page);
 }
 
@@ -94,11 +102,23 @@ h3 {
 @utility band-wash {
   background:
     radial-gradient(45% 120% at 0% 50%, #ffe4ef 0%, transparent 60%),
-    radial-gradient(45% 120% at 100% 50%, #e6f2ff 0%, transparent 60%),
+    radial-gradient(45% 120% at 100% 50%, #f6ecd2 0%, transparent 60%),
     #fff8fb;
 }
 
 /* Warm gradient for the closing call to action — replaces a dark block. */
 @utility brand-gradient {
-  background: linear-gradient(115deg, #f43f84 0%, #ff6b6b 48%, #ff9a4d 100%);
+  background: linear-gradient(115deg, #e04a80 0%, #d98a52 55%, #c9a227 100%);
+}
+
+/* The logo is black and gold; this is the matching dark block for the rare
+   places that want contrast against all the cream. */
+@utility ink-gradient {
+  background: linear-gradient(140deg, #1a181c 0%, #2b2622 100%);
+}
+
+/* Thin gold rule, echoing the rings on the badge. */
+@utility gold-rule {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, #c9a227, transparent) 1;
 }

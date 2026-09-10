@@ -37,13 +37,13 @@ export default async function HomePage() {
       <section className="hero-wash">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-[1.05fr_1fr] md:items-center md:py-24">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-brand uppercase shadow-soft">
-              <span className="size-1.5 rounded-full bg-brand" />
+            <p className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-gold-ink uppercase shadow-soft ring-1 ring-gold/30">
+              <span className="size-1.5 rounded-full bg-gold" />
               Made to order in South Africa
             </p>
             <h1 className="mt-5 text-4xl leading-[1.08] sm:text-5xl lg:text-6xl">
               Cute car accessories &amp;{' '}
-              <span className="text-brand">personalised</span> gifts
+              <span className="text-gold-ink">personalised</span> gifts
             </h1>
             <p className="mt-5 max-w-lg text-lg text-ink-soft">{site.blurb}</p>
 
@@ -92,7 +92,7 @@ export default async function HomePage() {
           <h2 className="text-2xl sm:text-3xl">Everyone&apos;s favourites</h2>
           <Link
             href="/shop"
-            className="shrink-0 text-sm font-semibold text-brand hover:underline"
+            className="shrink-0 text-sm font-semibold text-gold-ink hover:underline"
           >
             See everything →
           </Link>
@@ -114,7 +114,7 @@ export default async function HomePage() {
                 key={step.title}
                 className="rounded-3xl bg-white p-7 shadow-soft"
               >
-                <span className="grid size-10 place-items-center rounded-2xl bg-brand-light text-base font-semibold text-brand">
+                <span className="grid size-10 place-items-center rounded-2xl bg-gold-light font-display text-base font-semibold text-gold-ink">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 text-lg">{step.title}</h3>

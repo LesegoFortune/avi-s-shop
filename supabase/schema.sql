@@ -1,4 +1,4 @@
--- Sugar & Soul Finds — database schema
+-- Little Curated — database schema
 -- Paste this whole file into the Supabase SQL editor and run it once.
 
 -- ---------------------------------------------------------------------------

@@ -1,8 +1,10 @@
 /** Site-wide settings. Change these in one place. */
 export const site = {
-  name: 'Sugar & Soul Finds',
-  /** Shown in the header badge. Kept here so it can't drift from the name. */
-  monogram: 'S&S',
+  name: 'Little Curated',
+  /** Fallback mark for anywhere the logo image is not suitable. */
+  monogram: 'LC',
+  /** The badge logo, shown in the header and footer. */
+  logo: '/logo.jpg',
   tagline: 'Cute car accessories & personalised gifts',
   blurb:
     'Girly car décor, decals and one-of-a-kind personalised keepsakes — engraved, printed and shipped across South Africa.',

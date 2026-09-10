@@ -15,9 +15,14 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-app bg-white/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2.5 font-semibold">
-          <span className="brand-gradient grid size-9 place-items-center rounded-2xl font-display text-sm font-semibold text-white shadow-soft">
-            {site.monogram}
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element -- static local file */}
+          <img
+            src={site.logo}
+            alt=""
+            width={44}
+            height={44}
+            className="size-11 rounded-full ring-1 ring-gold/30"
+          />
           <span className="font-display text-lg tracking-tight">{site.name}</span>
         </Link>
 
@@ -26,7 +31,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="font-medium text-ink-soft transition-colors hover:text-brand"
+              className="font-medium text-ink-soft transition-colors hover:text-gold-ink"
             >
               {item.label}
             </Link>

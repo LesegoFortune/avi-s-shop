@@ -1,4 +1,4 @@
-# Sugar & Soul Finds
+# Little Curated
 
 Cute car accessories and personalised gifts — a catalogue site with WhatsApp
 ordering and a browser-based admin. No card payments: customers order or request

@@ -1,11 +1,11 @@
-# Sugar & Soul Finds — context for Claude
+# Little Curated — context for Claude
 
 Read this before making changes. It captures decisions made in the conversation
 that built this project, which aren't obvious from the code alone.
 
 ## What the business is
 
-Sugar & Soul Finds sells **cute car accessories and personalised gifts** in South
+Little Curated sells **cute car accessories and personalised gifts** in South
 Africa — flower seat belt pads, car window decals, cup holder coasters, air vent
 clips, steering wheel covers, personalised frosted-glass tumblers for bridal
 parties, engraved silicone baby feeding sets, acrylic photo-calendar keepsakes
@@ -36,8 +36,16 @@ and should be fixed.
   email address — the shop has no domain, so any address would bounce. The
   `email` field and `NEXT_PUBLIC_CONTACT_EMAIL` were removed rather than left
   pointing at a dead mailbox. Add one back only when a real inbox exists.
-- **Bright, feminine palette.** Rose pink primary with a pastel per category
-  (lilac, peach, mint, sky). A teal/amber theme was explicitly rejected.
+- **Bright palette, rose plus the logo's gold.** Rose stays the primary action
+  colour but was softened from the old hot pink (#f43f84 -> #e04a80) so it sits
+  with the gold rather than fighting it. Gold from the badge is the accent:
+  `gold` for decoration, `gold-ink` for text on light grounds (the bright gold
+  fails contrast), `gold-light` for tinted chips. Each category keeps its
+  pastel. A teal/amber theme was explicitly rejected.
+- **The logo is a black-and-gold badge** at `public/logo.jpg`, also the favicon
+  via `src/app/icon.png`. It is detailed, so it is shown small beside the
+  wordmark rather than used alone; it is cropped tight to the ring because the
+  original had white margin that shrank the mark at header size.
 - **Light theme only.** `globals.css` sets `color-scheme: light` and has no
   `prefers-color-scheme: dark` block. The owner asked for bright and modern; a
   dark scheme made the product photos look grubby. Don't reintroduce one.
@@ -77,9 +85,9 @@ and should be fixed.
 ## Conventions
 
 - `src/lib/config.ts` is the single place for shop name, contact details and
-  categories. The shop was renamed from "Avi's Shop" to "Sugar & Soul Finds":
-  `site.name` and `site.monogram` (the header badge) both live there, so
-  nothing else should hardcode the brand. Each category carries a `tint` that
+  categories. The shop has been renamed twice — "Avi's Shop", then "Sugar &
+  Soul Finds", now **Little Curated**. `site.name`, `site.monogram` and
+  `site.logo` all live there, so nothing else should hardcode the brand. Each category carries a `tint` that
   drives its pastel everywhere, and a `photo` — the slug of a product whose
   picture fronts that category on the home page.
 - `src/lib/seed.ts` and `supabase/seed.sql` must stay in step — the SQL is
