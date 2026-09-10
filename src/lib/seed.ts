@@ -581,7 +581,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-32',
-    created_at: '2026-01-32T00:00:00Z',
+    created_at: '2026-02-01T00:00:00Z',
     name: 'Trifold Baby Photo Frame',
     slug: 'trifold-baby-photo-frame',
     description:
@@ -599,7 +599,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-33',
-    created_at: '2026-01-33T00:00:00Z',
+    created_at: '2026-02-02T00:00:00Z',
     name: '“Happy Birthday” Gift Bag',
     slug: 'happy-birthday-gift-bag',
     description:
@@ -617,7 +617,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-34',
-    created_at: '2026-01-34T00:00:00Z',
+    created_at: '2026-02-03T00:00:00Z',
     name: '“To My Mom” Acrylic Plaque',
     slug: 'to-my-mom-acrylic-plaque',
     description:
@@ -635,7 +635,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-35',
-    created_at: '2026-01-35T00:00:00Z',
+    created_at: '2026-02-04T00:00:00Z',
     name: 'Personalised Face Photo Blanket',
     slug: 'personalised-face-photo-blanket',
     description:
@@ -653,7 +653,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-36',
-    created_at: '2026-01-36T00:00:00Z',
+    created_at: '2026-02-05T00:00:00Z',
     name: 'Personalised Bridal Slippers',
     slug: 'personalised-bridal-slippers',
     description:
@@ -671,7 +671,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-37',
-    created_at: '2026-01-37T00:00:00Z',
+    created_at: '2026-02-06T00:00:00Z',
     name: 'Personalised Baby Birth Stats Light',
     slug: 'baby-birth-stats-light',
     description:
@@ -689,7 +689,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-38',
-    created_at: '2026-01-38T00:00:00Z',
+    created_at: '2026-02-07T00:00:00Z',
     name: '“To My Man” Acrylic Heart',
     slug: 'to-my-man-acrylic-heart',
     description:
@@ -707,7 +707,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-39',
-    created_at: '2026-01-39T00:00:00Z',
+    created_at: '2026-02-08T00:00:00Z',
     name: 'Monogram Leather Phone Case',
     slug: 'monogram-leather-phone-case',
     description:
@@ -725,7 +725,7 @@ export const seedProducts: Product[] = [
   },
   {
     id: 'seed-40',
-    created_at: '2026-01-40T00:00:00Z',
+    created_at: '2026-02-09T00:00:00Z',
     name: 'Personalised Family Mugs (Set of 2)',
     slug: 'personalised-family-mugs',
     description:
@@ -736,6 +736,114 @@ export const seedProducts: Product[] = [
     personalised: true,
     personalisation_note: 'Send each child’s name, and tell us boy or girl for each character',
     options: ['Mum & Dad', 'Gogo & Mkhulu', 'Custom wording'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-41',
+    created_at: '2026-02-10T00:00:00Z',
+    name: 'Pink Dino Hooded Onesie',
+    slug: 'pink-dino-hooded-onesie',
+    description:
+      'Bright pink fleece romper with a yellow tummy patch, a spiked tail and a dinosaur face on the hood. Zips down the front so nappy changes stay quick.',
+    category: 'baby',
+    price: 329,
+    tiers: [{ min_qty: 2, price: 309 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-6 months', '6-12 months', '12-18 months', '18-24 months'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-42',
+    created_at: '2026-02-11T00:00:00Z',
+    name: 'Green Dino Onesie with Mittens',
+    slug: 'green-dino-hooded-onesie',
+    description:
+      'Olive fleece dino romper with a white tummy and a toothy hood, and it comes with matching mittens for the cold mornings.',
+    category: 'baby',
+    price: 349,
+    tiers: [{ min_qty: 2, price: 329 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-6 months', '6-12 months', '12-18 months', '18-24 months'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-43',
+    created_at: '2026-02-12T00:00:00Z',
+    name: 'Teddy Bear Hooded Onesie',
+    slug: 'teddy-bear-hooded-onesie',
+    description:
+      'Chocolate brown teddy suit in thick fleece, with ears on the hood, a little tail at the back and covered feet. Buttons all the way down.',
+    category: 'baby',
+    price: 379,
+    tiers: [{ min_qty: 2, price: 355 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-6 months', '6-12 months', '12-18 months', '18-24 months'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-44',
+    created_at: '2026-02-13T00:00:00Z',
+    name: 'Panda Hooded Onesie',
+    slug: 'panda-hooded-onesie',
+    description:
+      'Soft black and white panda romper with the face on the hood. The one that gets photographed the most.',
+    category: 'baby',
+    price: 349,
+    tiers: [{ min_qty: 2, price: 329 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-6 months', '6-12 months', '12-18 months', '18-24 months'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-45',
+    created_at: '2026-02-14T00:00:00Z',
+    name: 'Dino Romper & Hat Set',
+    slug: 'dino-romper-and-hat-set',
+    description:
+      'Two pieces in 100 percent cotton muslin — a sleeveless romper with a spiked back and a matching dino hat. Made for summer, not for winter.',
+    category: 'baby',
+    price: 249,
+    tiers: [{ min_qty: 3, price: 229 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-3 months', '3-6 months', '6-9 months'],
+    bulk_from: 5,
+    image_url: null,
+    in_stock: true,
+    featured: false,
+  },
+  {
+    id: 'seed-46',
+    created_at: '2026-02-15T00:00:00Z',
+    name: 'Red Dragon Hooded Onesie',
+    slug: 'red-dragon-hooded-onesie',
+    description:
+      'Red fleece romper with yellow spikes down the back and little horns on the hood. Warm enough to be the whole outfit indoors.',
+    category: 'baby',
+    price: 329,
+    tiers: [{ min_qty: 2, price: 309 }],
+    personalised: false,
+    personalisation_note: null,
+    options: ['0-6 months', '6-12 months', '12-18 months', '18-24 months'],
     bulk_from: 5,
     image_url: null,
     in_stock: true,

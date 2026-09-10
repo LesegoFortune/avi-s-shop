@@ -85,5 +85,17 @@ values
 
   ('Monogram Leather Phone Case', 'monogram-leather-phone-case', 'Soft leather-look case embossed with your initial in a floral letter, with a name and year underneath.', 'phone-cases', 249, '[{"min_qty":3,"price":229}]', true, 'Send your initial, the name, the year and your exact phone model', '["Brown","Black","Tan"]', 5, true, false),
 
-  ('Personalised Family Mugs (Set of 2)', 'personalised-family-mugs', 'A pair of mugs printed with little cartoon versions of the kids and their names. The set that gets used every single morning.', 'drinkware', 299, '[{"min_qty":3,"price":279}]', true, 'Send each child’s name, and tell us boy or girl for each character', '["Mum & Dad","Gogo & Mkhulu","Custom wording"]', 5, true, false)
+  ('Personalised Family Mugs (Set of 2)', 'personalised-family-mugs', 'A pair of mugs printed with little cartoon versions of the kids and their names. The set that gets used every single morning.', 'drinkware', 299, '[{"min_qty":3,"price":279}]', true, 'Send each child’s name, and tell us boy or girl for each character', '["Mum & Dad","Gogo & Mkhulu","Custom wording"]', 5, true, false),
+
+  ('Pink Dino Hooded Onesie', 'pink-dino-hooded-onesie', 'Bright pink fleece romper with a yellow tummy patch, a spiked tail and a dinosaur face on the hood. Zips down the front so nappy changes stay quick.', 'baby', 329, '[{"min_qty":2,"price":309}]', false, null, '["0-6 months","6-12 months","12-18 months","18-24 months"]', 5, true, false),
+
+  ('Green Dino Onesie with Mittens', 'green-dino-hooded-onesie', 'Olive fleece dino romper with a white tummy and a toothy hood, and it comes with matching mittens for the cold mornings.', 'baby', 349, '[{"min_qty":2,"price":329}]', false, null, '["0-6 months","6-12 months","12-18 months","18-24 months"]', 5, true, false),
+
+  ('Teddy Bear Hooded Onesie', 'teddy-bear-hooded-onesie', 'Chocolate brown teddy suit in thick fleece, with ears on the hood, a little tail at the back and covered feet. Buttons all the way down.', 'baby', 379, '[{"min_qty":2,"price":355}]', false, null, '["0-6 months","6-12 months","12-18 months","18-24 months"]', 5, true, false),
+
+  ('Panda Hooded Onesie', 'panda-hooded-onesie', 'Soft black and white panda romper with the face on the hood. The one that gets photographed the most.', 'baby', 349, '[{"min_qty":2,"price":329}]', false, null, '["0-6 months","6-12 months","12-18 months","18-24 months"]', 5, true, false),
+
+  ('Dino Romper & Hat Set', 'dino-romper-and-hat-set', 'Two pieces in 100 percent cotton muslin — a sleeveless romper with a spiked back and a matching dino hat. Made for summer, not for winter.', 'baby', 249, '[{"min_qty":3,"price":229}]', false, null, '["0-3 months","3-6 months","6-9 months"]', 5, true, false),
+
+  ('Red Dragon Hooded Onesie', 'red-dragon-hooded-onesie', 'Red fleece romper with yellow spikes down the back and little horns on the hood. Warm enough to be the whole outfit indoors.', 'baby', 329, '[{"min_qty":2,"price":309}]', false, null, '["0-6 months","6-12 months","12-18 months","18-24 months"]', 5, true, false)
 on conflict (slug) do nothing;
